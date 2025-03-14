@@ -7,7 +7,7 @@ export default function UseCases() {
     {
       icon: <FileText className="h-8 w-8 text-blue-600" />,
       title: "Document Management",
-      description: "Digital storage and easy retrieval of all society documents including notices, minutes of meetings, and bylaws.",
+      description: "Digital storage and easy retrieval and search across all society documents including notices, minutes of meetings, bills and bylaws.",
     },
     {
       icon: <Vote className="h-8 w-8 text-blue-600" />,
@@ -18,16 +18,6 @@ export default function UseCases() {
       icon: <ChartBar className="h-8 w-8 text-blue-600" />,
       title: "Financial Transparency",
       description: "Detailed breakdown of society expenses, contractor details, and real-time budget tracking.",
-    },
-    {
-      icon: <MessageSquare className="h-8 w-8 text-blue-600" />,
-      title: "Community Forum",
-      description: "Platform for members to discuss proposals, share ideas, and provide feedback on society matters.",
-    },
-    {
-      icon: <Building2 className="h-8 w-8 text-blue-600" />,
-      title: "Maintenance Tracking",
-      description: "System for tracking maintenance requests, contractor assignments, and work completion status.",
     },
     {
       icon: <Receipt className="h-8 w-8 text-blue-600" />,
