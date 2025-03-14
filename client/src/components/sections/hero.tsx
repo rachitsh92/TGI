@@ -2,12 +2,12 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 export default function Hero() {
-  const scrollToWaitlist = () => {
-    document.getElementById("waitlist")?.scrollIntoView({ behavior: "smooth" });
+  const scrollToJoin = () => {
+    document.getElementById("join")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-blue-50 to-white">
+    <section id="mission" className="min-h-[calc(100vh-4rem)] flex items-center justify-center bg-gradient-to-b from-blue-50 to-white">
       <div className="container px-4 py-16 md:py-24">
         <div className="grid gap-8 md:grid-cols-2 items-center">
           <motion.div
@@ -26,22 +26,22 @@ export default function Hero() {
             <Button
               size="lg"
               className="mt-8"
-              onClick={scrollToWaitlist}
+              onClick={scrollToJoin}
             >
-              Join the Waitlist
+              Join the Cause
             </Button>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="relative aspect-square"
+            className="relative aspect-square rounded-lg overflow-hidden"
           >
             <img
-              src="https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e"
+              src="https://images.unsplash.com/photo-1557804506-669a67965ba0"
               alt="Digital Governance"
-              className="rounded-lg shadow-2xl"
+              className="object-cover w-full h-full rounded-lg shadow-2xl"
             />
           </motion.div>
         </div>

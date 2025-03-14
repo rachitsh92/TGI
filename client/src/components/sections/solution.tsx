@@ -4,7 +4,7 @@ import { FileCheck, Vote, Shield } from "lucide-react";
 
 export default function Solution() {
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
+    <section id="solutions" className="py-16 md:py-24 bg-gray-50">
       <div className="container px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div

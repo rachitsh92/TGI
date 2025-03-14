@@ -4,7 +4,7 @@ import { AlertTriangle, FileQuestion, Users } from "lucide-react";
 
 export default function Problem() {
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section id="problems" className="py-16 md:py-24 bg-white">
       <div className="container px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

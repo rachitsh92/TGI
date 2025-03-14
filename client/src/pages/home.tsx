@@ -1,15 +1,21 @@
+import Navbar from "@/components/ui/navbar";
 import Hero from "@/components/sections/hero";
 import Problem from "@/components/sections/problem";
 import Solution from "@/components/sections/solution";
-import Waitlist from "@/components/sections/waitlist";
+import UseCases from "@/components/sections/use-cases";
+import Join from "@/components/sections/join";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <Hero />
-      <Problem />
-      <Solution />
-      <Waitlist />
-    </main>
+    <div className="min-h-screen">
+      <Navbar />
+      <main className="pt-16">
+        <Hero />
+        <Problem />
+        <Solution />
+        <UseCases />
+        <Join />
+      </main>
+    </div>
   );
 }
