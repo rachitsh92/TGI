@@ -25,19 +25,19 @@ export default function Problem() {
         <div className="grid md:grid-cols-3 gap-8 mt-16">
           {[
             {
-              icon: <FileQuestion className="h-8 w-8 text-blue-600" />,
+              icon: <FileQuestion className="h-12 w-12 text-blue-600 mx-auto" />,
               title: "Lack of Transparency",
               description:
                 "Decision-making processes are often opaque, leading to trust issues and reduced stakeholder engagement.",
             },
             {
-              icon: <Users className="h-8 w-8 text-blue-600" />,
+              icon: <Users className="h-12 w-12 text-blue-600 mx-auto" />,
               title: "Limited Participation",
               description:
                 "Traditional governance models exclude key stakeholders from important decisions and discussions.",
             },
             {
-              icon: <AlertTriangle className="h-8 w-8 text-blue-600" />,
+              icon: <AlertTriangle className="h-12 w-12 text-blue-600 mx-auto" />,
               title: "Inefficient Processes",
               description:
                 "Manual, paper-based systems create delays and increase the risk of errors in governance procedures.",
@@ -51,12 +51,10 @@ export default function Problem() {
               viewport={{ once: true }}
             >
               <Card>
-                <CardContent className="pt-6">
-                  <div className="text-center">
-                    {item.icon}
-                    <h3 className="mt-4 text-xl font-semibold">{item.title}</h3>
-                    <p className="mt-2 text-gray-600">{item.description}</p>
-                  </div>
+                <CardContent className="pt-6 text-center">
+                  {item.icon}
+                  <h3 className="mt-4 text-xl font-semibold">{item.title}</h3>
+                  <p className="mt-2 text-gray-600">{item.description}</p>
                 </CardContent>
               </Card>
             </motion.div>
